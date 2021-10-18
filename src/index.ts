@@ -1,3 +1,3 @@
-export * from "./getFoo";
+export * from "./hooks/";
 
 export * from "./types/";
