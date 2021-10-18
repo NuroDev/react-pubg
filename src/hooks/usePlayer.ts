@@ -1,7 +1,8 @@
 import { getPlayer } from "pubg.ts";
 
-import type { Player, PlayerOptions } from "pubg.ts";
 import { usePubgHook } from "../util";
+
+import type { Player, PlayerOptions } from "pubg.ts";
 
 /**
  * Get player(s) by a given name(s) or id(s)

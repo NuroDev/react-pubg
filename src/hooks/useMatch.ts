@@ -1,4 +1,5 @@
 import { getMatch } from "pubg.ts";
+
 import { usePubgHook } from "../util";
 
 import type { Match, MatchOptions } from "pubg.ts";
