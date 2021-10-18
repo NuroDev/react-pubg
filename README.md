@@ -2,9 +2,9 @@
   <h1>
     <br/>
     <br/>
-    ❗
+    🐔
     <br />
-    typescript-lib
+    react-pubg
     <br />
     <br />
     <br />
@@ -12,17 +12,23 @@
   </h1>
   <sup>
     <br />
-    Project template to bootstrap a new TypeScript library</em>
+    React hooks for pubg.ts
     <br />
     <br />
-    <a href="https://www.npmjs.com/package/typescript-lib">
-       <img src="https://img.shields.io/npm/v/typescript-lib?label=%20&style=for-the-badge" alt="Package Version" />
+    <a href="https://www.npmjs.com/package/react-pubg">
+       <img src="https://img.shields.io/npm/v/react-pubg?label=%20&style=for-the-badge" alt="Package Version" />
     </a>
-    <a href="https://www.npmjs.com/package/typescript-lib">
-      <img src="https://img.shields.io/npm/dm/typescript-lib?label=%20&style=for-the-badge" alt="Package Monthly Downloads" />
+    <a href="https://www.npmjs.com/package/react-pubg">
+      <img src="https://img.shields.io/npm/dm/react-pubg?label=%20&style=for-the-badge" alt="Package Monthly Downloads" />
     </a>
-    <a href="https://github.com/nurodev/typescript-lib">
+    <a href="https://github.com/nurodev/react-pubg">
       <img src="https://img.shields.io/badge/-Docs-blue.svg?style=for-the-badge" alt="Docs" />
+    </a>
+    <a href="https://documentation.pubg.com/">
+      <img src="https://img.shields.io/badge/-API-yellow.svg?style=for-the-badge" alt="API" />
+    </a>
+    <a href="http://react-pubg.vercel.app/">
+      <img src="https://img.shields.io/badge/-Example-white.svg?style=for-the-badge" alt="Example" />
     </a>
   </sup>
   <br />
@@ -36,17 +42,45 @@
 Install it locally in your project
 
 ```bash
-npm i --save typescript-lib
+npm i --save react-pubg
 
 # Or with Yarn
 
-yarn add typescript-lib
+yarn add react-pubg
 ```
 
 ## 🦄 Usage
 
-```typescript
-import { ... } from "typescript-lib";
+### Sign for a developer account
 
-// ...
+You'll first need to [sign up on the PUBG developer API site](https://developer.playbattlegrounds.com/). Using this account you can create a API token
+
+### Register an app
+
+With an account created, you can [create a new developer application](https://developer.playbattlegrounds.com/apps/new?locale=en) that will provide you with your API key.
+
+### Make something!
+
+```tsx
+import { usePlayer } from "react-pubg";
+
+function App () {
+  const { data: player, error } = usePlayer({
+    apiKey: "...",
+    value: "WackyJacky101",
+  });
+
+  // If data is null, means it's still loading
+  if (!player) {
+    return <>Loading...</>;
+  }
+
+  // Catch fetch failures/errors
+  if (error) {
+    return <>Error fetching player data</>;
+  }
+
+  // The final player data
+  return <pre>{JSON.stringify(player, null, 4)}</pre>
+}
 ```
