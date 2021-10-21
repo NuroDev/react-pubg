@@ -1,13 +1,13 @@
 {
-  "name": "typescript-lib",
+  "name": "react-pubg",
   "version": "0.1.1",
-  "description": "Project template to bootstrap a new TypeScript library",
+  "description": "React hooks for pubg.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nurodev/typescript-lib.git"
+    "url": "https://github.com/nurodev/react-pubg.git"
   },
-  "homepage": "https://github.com/nurodev/typescript-lib",
-  "bugs": "https://github.com/nurodev/typescript-lib/issues",
+  "homepage": "https://github.com/nurodev/react-pubg",
+  "bugs": "https://github.com/nurodev/react-pubg/issues",
   "author": {
     "name": "nurodev",
     "email": "me@nuro.dev",
@@ -16,6 +16,7 @@
   "keywords": [
     "api",
     "hooks",
+    "pubg",
     "react",
     "typescript",
     "wrapper"
