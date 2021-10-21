@@ -64,23 +64,20 @@ With an account created, you can [create a new developer application](https://de
 ```tsx
 import { usePlayer } from "react-pubg";
 
-function App () {
-  const { data: player, error } = usePlayer({
+function App() {
+  const {
+    data: player,
+    loading,
+    error,
+  } = usePlayer({
     apiKey: "...",
-    value: "WackyJacky101",
+    value: "WackyJacky101", // Or an array of player names
   });
 
-  // If data is null, means it's still loading
-  if (!player) {
-    return <>Loading...</>;
-  }
+  if (loading) return <>Loading...</>;
 
-  // Catch fetch failures/errors
-  if (error) {
-    return <>Error fetching player data</>;
-  }
+  if (error) return <>Error fetching player data</>;
 
-  // The final player data
-  return <pre>{JSON.stringify(player, null, 4)}</pre>
+  return <pre>{JSON.stringify(player, null, 4)}</pre>;
 }
 ```
