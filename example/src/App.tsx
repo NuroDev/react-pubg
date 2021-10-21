@@ -1,18 +1,18 @@
 import { usePlayer } from "../../src";
 
 function Player() {
-  const { data: player, error } = usePlayer({
+  const {
+    data: player,
+    loading,
+    error,
+  } = usePlayer({
     apiKey: "...",
     value: "WackyJacky101",
   });
 
-  if (!player) {
-    return <>Loading...</>;
-  }
+  if (loading) return <>Loading...</>;
 
-  if (error) {
-    return <>Error fetching player data</>;
-  }
+  if (error) return <>{error}</>;
 
   return (
     <>
