@@ -1,13 +1,16 @@
 import { usePlayer } from "../../src";
 
+// @ts-ignore
+const apiKey = import.meta.env.VITE_PUBG_API_KEY;
+
 function Player() {
   const {
-    data: player,
-    loading,
+    data: players,
     error,
+    loading,
   } = usePlayer({
-    apiKey: "...",
-    value: "WackyJacky101",
+    apiKey,
+    value: ["WackyJacky101"],
   });
 
   if (loading) return <>Loading...</>;
@@ -16,7 +19,7 @@ function Player() {
 
   return (
     <>
-      <pre>{JSON.stringify(player, null, 4)}</pre>
+      <pre>{JSON.stringify(players, null, 4)}</pre>
     </>
   );
 }
