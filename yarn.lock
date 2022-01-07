@@ -1054,10 +1054,10 @@ postcss@^8.3.8:
     picocolors "^0.2.1"
     source-map-js "^0.6.2"
 
-pubg.ts@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/pubg.ts/-/pubg.ts-0.1.2.tgz#0adea622c51b88699ecdab201cfbce3c2f1ef7e1"
-  integrity sha512-H9I96Cj35Ds0hMIvnjCIjZK0TmPbHyV7eBPH7gh4wrV9PKE8dkCiyHbwKfBryICeFf6x5ecGJVLFh49ah9CXJA==
+pubg.ts@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/pubg.ts/-/pubg.ts-0.1.7.tgz#4d50fd2a4d403a62357dcc7e98d30504db33d377"
+  integrity sha512-mah5TxlezWZhVTvRpr3l+gFk4WugW0/szzTlDt+3D8BD4M2tcGuKjU8pJ7Ycz6Nmxu48XhdC6azIQwXUDYAFtQ==
   dependencies:
     axios "^0.22.0"
 

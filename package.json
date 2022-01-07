@@ -31,15 +31,15 @@
     "README.md"
   ],
   "scripts": {
-    "dev": "npm run build -- --watch",
+    "dev": "yarn build --watch",
     "build": "rimraf dist && tsup",
-    "build:prod": "cross-env NODE_ENV=production npm run build",
+    "build:prod": "cross-env NODE_ENV=production yarn build",
     "example:build": "vite build ./example/",
     "example:dev": "vite ./example/",
     "example:preview": "vite preview ./example/"
   },
   "dependencies": {
-    "pubg.ts": "^0.1.2"
+    "pubg.ts": "^0.1.7"
   },
   "devDependencies": {
     "@types/node": "^16.10.2",
