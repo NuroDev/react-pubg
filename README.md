@@ -12,29 +12,15 @@
   </h1>
   <sup>
     <br />
-    React hooks for pubg.ts
+    React hooks for pubg.ts</em>
     <br />
     <br />
-    <a href="https://www.npmjs.com/package/react-pubg">
-       <img src="https://img.shields.io/npm/v/react-pubg?label=%20&style=for-the-badge" alt="Package Version" />
-    </a>
-    <a href="https://www.npmjs.com/package/react-pubg">
-      <img src="https://img.shields.io/npm/dm/react-pubg?label=%20&style=for-the-badge" alt="Package Monthly Downloads" />
-    </a>
-    <a href="https://github.com/nurodev/react-pubg">
-      <img src="https://img.shields.io/badge/-Docs-blue.svg?style=for-the-badge" alt="Docs" />
-    </a>
-    <a href="https://documentation.pubg.com/">
-      <img src="https://img.shields.io/badge/-API-yellow.svg?style=for-the-badge" alt="API" />
-    </a>
-    <a href="http://react-pubg.vercel.app/">
-      <img src="https://img.shields.io/badge/-Example-white.svg?style=for-the-badge" alt="Example" />
-    </a>
   </sup>
-  <br />
-  <br />
-  <br />
-  <br />
+  
+  [![Package Version](https://img.shields.io/npm/v/react-pubg?label=%20&style=for-the-badge)](https://www.npmjs.com/package/react-pubg)
+  [![Package Monthly Downloads](https://img.shields.io/npm/dm/react-pubg?label=%20&style=for-the-badge)](https://www.npmjs.com/package/react-pubg)
+  [![Docs](https://img.shields.io/badge/-Docs-blue.svg?style=for-the-badge)](https://documentation.pubg.com)
+  
 </div>
 
 ## 🚀 Install
